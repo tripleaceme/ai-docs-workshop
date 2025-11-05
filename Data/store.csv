@@ -1,0 +1,1000 @@
+_StoreID,City Name,County,StateCode,Type,Latitude,Longitude,AreaCode
+1,Birmingham,Shelby County/Jefferson County,AL,City,33.52744,-86.79905,205
+2,Huntsville,Limestone County/Madison County,AL,City,34.69901,-86.67298,256
+3,Mobile,Mobile County,AL,City,30.69436,-88.04305,251
+4,Montgomery,Montgomery County,AL,City,32.36681,-86.29997,334
+5,Little Rock,Pulaski County,AR,City,34.74648,-92.28959,501
+6,Chandler,Maricopa County,AZ,City,33.30616,-111.84125,480
+7,Gilbert,Maricopa County,AZ,Town,33.35283,-111.78903,480
+8,Glendale,Maricopa County,AZ,City,33.53865,-112.18599,623
+9,Mesa,Maricopa County,AZ,City,33.42227,-111.82264,480
+10,Peoria,Maricopa County/Yavapai County,AZ,City,33.7862,-112.30801,928
+11,Phoenix,Maricopa County,AZ,City,33.44838,-112.07404,602
+12,Scottsdale,Maricopa County,AZ,City,33.50921,-111.89903,480
+13,Surprise,Maricopa County,AZ,City,33.63059,-112.33322,623
+14,Tempe,Maricopa County,AZ,City,33.41477,-111.90931,480
+15,Tucson,Pima County,AZ,City,32.22174,-110.92648,520
+16,Anaheim,Orange County,CA,City,33.83529,-117.9145,657
+17,Antioch,Contra Costa County,CA,City,38.00492,-121.80579,925
+18,Bakersfield,Kern County,CA,City,35.37329,-119.01871,661
+19,Berkeley,Alameda County,CA,City,37.87159,-122.27275,510
+20,Burbank,Los Angeles County,CA,City,34.18084,-118.30897,818
+21,Carlsbad,San Diego County,CA,City,33.15809,-117.35059,760
+22,Chula Vista,San Diego County,CA,City,32.64,-117.08417,619
+23,Clovis,Fresno County,CA,City,36.82523,-119.70292,559
+24,Concord,Contra Costa County,CA,City,37.97798,-122.03107,925
+25,Corona,Riverside County,CA,City,33.87529,-117.56644,951
+26,Costa Mesa,Orange County,CA,City,33.64113,-117.91867,949
+27,Daly City,San Mateo County,CA,City,37.70583,-122.46194,650
+28,Downey,Los Angeles County,CA,City,33.94001,-118.13257,562
+29,East Los Angeles,Los Angeles County,CA,CDP,34.0239,-118.17202,323
+30,El Cajon,San Diego County,CA,City,32.79477,-116.96253,619
+31,Elk Grove,Sacramento County,CA,City,38.4088,-121.37162,916
+32,El Monte,Los Angeles County,CA,City,34.06862,-118.02757,626
+33,Escondido,San Diego County,CA,City,33.11921,-117.08642,760
+34,Fairfield,Solano County,CA,City,38.24936,-122.03997,707
+35,Fontana,San Bernardino County,CA,City,34.09223,-117.43505,909
+36,Fremont,Alameda County,CA,City,37.54827,-121.98857,510
+37,Fresno,Fresno County,CA,City,36.74773,-119.77237,559
+38,Fullerton,Orange County,CA,City,33.87029,-117.92534,657
+39,Garden Grove,Orange County,CA,City,33.77391,-117.94145,657
+40,Glendale,Los Angeles County,CA,City,34.14251,-118.25508,818
+41,Hayward,Alameda County,CA,City,37.66882,-122.0808,510
+42,Huntington Beach,Orange County,CA,City,33.6603,-117.99923,657
+43,Inglewood,Los Angeles County,CA,City,33.96168,-118.35313,424
+44,Irvine,Orange County,CA,City,33.66946,-117.82311,949
+45,Jurupa Valley,Riverside County,CA,City,34.00259,-117.46761,951
+46,Lancaster,Los Angeles County,CA,City,34.69804,-118.13674,661
+47,Long Beach,Los Angeles County,CA,City,33.76696,-118.18923,562
+48,Los Angeles,Los Angeles County,CA,City,34.05223,-118.24368,213
+49,Modesto,Stanislaus County,CA,City,37.6391,-120.99688,209
+50,Moreno Valley,Riverside County,CA,City,33.93752,-117.23059,951
+51,Murrieta,Riverside County,CA,City,33.55391,-117.21392,951
+52,Norwalk,Los Angeles County,CA,City,33.90224,-118.08173,562
+53,Oakland,Alameda County,CA,City,37.80437,-122.2708,510
+54,Oceanside,San Diego County,CA,City,33.19587,-117.37948,760
+55,Ontario,San Bernardino County,CA,City,34.06334,-117.65089,909
+56,Orange,Orange County,CA,City,33.78779,-117.85311,657
+57,Oxnard,Ventura County,CA,City,34.1975,-119.17705,805
+58,Palmdale,Los Angeles County,CA,City,34.57943,-118.11646,661
+59,Pasadena,Los Angeles County,CA,City,34.14778,-118.14452,626
+60,Pomona,Los Angeles County,CA,City,34.05529,-117.75228,909
+61,Rancho Cucamonga,San Bernardino County,CA,City,34.1064,-117.59311,909
+62,Rialto,San Bernardino County,CA,City,34.1064,-117.37032,909
+63,Richmond,Contra Costa County,CA,City,37.93576,-122.34775,510
+64,Riverside,Riverside County,CA,City,33.95333,-117.39611,951
+65,Roseville,Placer County,CA,City,38.75212,-121.28801,916
+66,Sacramento,Sacramento County,CA,City,38.58157,-121.4944,530
+67,Salinas,Monterey County,CA,City,36.67774,-121.6555,831
+68,San Bernardino,San Bernardino County,CA,City,34.10834,-117.28977,909
+69,San Buenaventura (Ventura),Ventura County,CA,City,34.26778,-119.25421,805
+70,San Diego,San Diego County,CA,City,32.71533,-117.15726,619
+71,San Francisco,San Francisco County,CA,City,37.775,-122.41944,415
+72,San Jose,Santa Clara County,CA,City,37.33939,-121.89496,408
+73,San Mateo,San Mateo County,CA,City,37.56299,-122.32553,650
+74,Santa Ana,Orange County,CA,City,33.74557,-117.86783,949
+75,Santa Clara,Santa Clara County,CA,City,37.35411,-121.95524,408
+76,Santa Clarita,Los Angeles County,CA,City,34.39166,-118.54259,661
+77,Santa Maria,Santa Barbara County,CA,City,34.95303,-120.43572,805
+78,Santa Rosa,Sonoma County,CA,City,38.44047,-122.71443,707
+79,Simi Valley,Ventura County,CA,City,34.26945,-118.78148,805
+80,Stockton,San Joaquin County,CA,City,37.9577,-121.29078,209
+81,Sunnyvale,Santa Clara County,CA,City,37.36883,-122.03635,408
+82,Temecula,Riverside County,CA,City,33.49364,-117.14836,951
+83,Thousand Oaks,Ventura County,CA,City,34.17056,-118.8375,805
+84,Torrance,Los Angeles County,CA,City,33.83585,-118.34063,424
+85,Vallejo,Solano County,CA,City,38.10409,-122.25664,707
+86,Victorville,San Bernardino County,CA,City,34.53611,-117.29116,760
+87,Visalia,Tulare County,CA,City,36.33023,-119.29206,559
+88,Vista,San Diego County,CA,City,33.20004,-117.24254,760
+89,West Covina,Los Angeles County,CA,City,34.06862,-117.93895,626
+90,Arvada,Jefferson County/Adams County,CO,City,39.83373,-105.15031,303
+91,Aurora,Adams County/Douglas County/Arapahoe County,CO,City,39.688,-104.68974,303
+92,Boulder,Boulder County,CO,City,40.01499,-105.27055,303
+93,Centennial,Arapahoe County,CO,City,39.57916,-104.87692,303
+94,Colorado Springs,El Paso County,CO,City,38.83388,-104.82136,719
+95,Denver,Denver County,CO,City,39.73915,-104.9847,303
+96,Fort Collins,Larimer County,CO,City,40.58526,-105.08442,970
+97,Greeley,Weld County,CO,City,40.42331,-104.70913,970
+98,Highlands Ranch,Douglas County,CO,CDP,39.55388,-104.96943,303
+99,Lakewood,Jefferson County,CO,City,39.70471,-105.08137,303
+100,Pueblo,Pueblo County,CO,City,38.25445,-104.60914,719
+101,Thornton,Adams County/Weld County,CO,City,39.91942,-104.94281,303
+102,Westminster,Jefferson County/Adams County,CO,City,39.88219,-105.06443,303
+103,Bridgeport,Fairfield County,CT,City,41.16704,-73.20483,203
+104,Bridgeport (Town),Fairfield County,CT,Town,41.18739,-73.19576,203
+105,Hartford,Hartford County,CT,City,41.76371,-72.68509,959
+106,Hartford (Town),Hartford County,CT,Town,41.76593,-72.68158,959
+107,New Haven,New Haven County,CT,City,41.30815,-72.92816,203
+108,New Haven (Town),New Haven County,CT,Town,41.31081,-72.92495,203
+109,Stamford,Fairfield County,CT,City,41.05343,-73.53873,203
+110,Stamford (Town),Fairfield County,CT,Town,41.07986,-73.54603,203
+111,Waterbury,New Haven County,CT,City,41.55815,-73.0515,203
+112,Waterbury (Town),New Haven County,CT,Town,41.5585,-73.03668,203
+113,Washington,District of Columbia,DC,City,38.9041,-77.01723,202
+114,Brandon,Hillsborough County,FL,CDP,27.9378,-82.28592,813
+115,Cape Coral,Lee County,FL,City,26.56285,-81.94953,941
+116,Clearwater,Pinellas County,FL,City,27.97895,-82.76657,727
+117,Coral Springs,Broward County,FL,City,26.27119,-80.2706,954
+118,Davie,Broward County,FL,Town,26.06287,-80.2331,954
+119,Fort Lauderdale,Broward County,FL,City,26.12231,-80.14338,954
+120,Gainesville,Alachua County,FL,City,29.65163,-82.32483,352
+121,Hialeah,Miami-Dade County,FL,City,25.8576,-80.27811,305
+122,Hollywood,Broward County,FL,City,26.0112,-80.14949,954
+123,Jacksonville,Duval County,FL,City,30.33218,-81.65565,904
+124,Lakeland,Polk County,FL,City,28.03947,-81.9498,863
+125,Lehigh Acres,Lee County,FL,CDP,26.62535,-81.6248,941
+126,Miami,Miami-Dade County,FL,City,25.77427,-80.19366,305
+127,Miami Gardens,Miami-Dade County,FL,City,25.94204,-80.2456,305
+128,Miramar,Broward County,FL,City,25.98731,-80.23227,954
+129,Orlando,Orange County,FL,City,28.53834,-81.37924,407
+130,Palm Bay,Brevard County,FL,City,28.03446,-80.58866,321
+131,Pembroke Pines,Broward County,FL,City,26.00315,-80.22394,954
+132,Pompano Beach,Broward County,FL,City,26.23786,-80.12477,954
+133,Port St. Lucie,St. Lucie County,FL,City,27.29393,-80.35033,772
+134,Spring Hill,Hernando County,FL,CDP,28.47689,-82.52546,352
+135,St. Petersburg,Pinellas County,FL,City,27.77086,-82.67927,727
+136,Tallahassee,Leon County,FL,City,30.43826,-84.28073,850
+137,Tampa,Hillsborough County,FL,City,27.94752,-82.45843,813
+138,West Palm Beach,Palm Beach County,FL,City,26.71534,-80.05337,561
+139,Athens,Clarke County,GA,Unified Government,33.95219,-83.36715,706
+140,Atlanta,DeKalb County/Fulton County,GA,City,33.76291,-84.42267,678
+141,Augusta,Richmond County,GA,Consolidated Government,33.36149,-82.075,706
+142,Columbus,Muscogee County,GA,City,32.46098,-84.98771,706
+143,Macon,Bibb County,GA,Other,32.80884,-83.69419,478
+144,Sandy Springs,Fulton County,GA,City,33.92427,-84.37854,678
+145,Savannah,Chatham County,GA,City,32.08354,-81.09983,912
+146,Honolulu,Honolulu County,HI,CDP,21.32435,-157.84764,808
+147,Cedar Rapids,Linn County,IA,City,42.00833,-91.64407,319
+148,Davenport,Scott County,IA,City,41.52364,-90.57764,563
+149,Des Moines,Warren County/Polk County,IA,City,41.57259,-93.61024,515
+150,Boise City,Ada County,ID,City,43.6135,-116.20345,208
+151,Aurora,Kendall County/Kane County/Will County/DuPage County,IL,City,41.76346,-88.2901,630
+152,Aurora (Township),Kane County,IL,Township,41.76887,-88.31893,630
+153,Bloomingdale (Township),DuPage County,IL,Township,41.94563,-88.08462,630
+154,Bremen,Cook County,IL,Township,41.60156,-87.73503,708
+155,Capital,Sangamon County,IL,Township,39.79106,-89.64457,217
+156,Chicago,Cook County/DuPage County,IL,City,41.83755,-87.68184,773
+157,Downers Grove (Township),DuPage County,IL,Township,41.7543,-87.97753,630
+158,Elgin,Cook County/Kane County,IL,City,42.03964,-88.32171,847
+159,Elgin (Township),Kane County,IL,Township,42.0261,-88.31822,847
+160,Hanover,Cook County,IL,Township,42.02803,-88.20364,847
+161,Joliet,Kendall County/Will County,IL,City,41.5177,-88.14885,815
+162,Lisle (Township),DuPage County,IL,Township,41.77193,-88.09209,630
+163,Lyons (Township),Cook County,IL,Township,41.77475,-87.8596,708
+164,Maine,Cook County,IL,Township,42.03353,-87.86441,847
+165,Milton,DuPage County,IL,Township,41.85857,-88.08948,630
+166,Naperville,Will County/DuPage County,IL,City,41.74917,-88.16202,630
+167,Naperville (Township),DuPage County,IL,Township,41.76635,-88.2009,630
+168,Niles (Township),Cook County,IL,Township,42.03209,-87.75778,847
+169,Palatine (Township),Cook County,IL,Township,42.11125,-88.0644,847
+170,Peoria,Peoria County,IL,City,40.69365,-89.58899,309
+171,Peoria City,Peoria County,IL,Township,40.74495,-89.60964,309
+172,Proviso,Cook County,IL,Township,41.86472,-87.87119,708
+173,Rockford,Winnebago County/Ogle County,IL,City,42.25884,-89.06455,815
+174,Rockford (Township),Winnebago County,IL,Township,42.24868,-89.07452,815
+175,Schaumburg (Township),Cook County,IL,Township,42.02911,-88.08951,630
+176,Springfield,Sangamon County,IL,City,39.80172,-89.64371,217
+177,Thornton (Township),Cook County,IL,Township,41.60127,-87.60032,708
+178,Wheeling (Township),Cook County,IL,Township,42.10987,-87.94458,847
+179,Worth (Township),Cook County,IL,Township,41.69043,-87.74383,708
+180,York,DuPage County,IL,Township,41.86177,-87.9761,630
+181,Calumet,Lake County,IN,Township,41.58533,-87.35516,219
+182,Center,Marion County,IN,Township,39.77485,-86.13949,317
+183,Evansville,Vanderburgh County,IN,City,37.97476,-87.55585,812
+184,Fort Wayne,Allen County,IN,City,41.1306,-85.12886,260
+185,Indianapolis,Marion County.,IN,City,39.778,-86.14584,317
+186,Lawrence (Township),Marion County,IN,Township,39.8716,-86.01156,317
+187,North,Lake County,IN,Township,41.61329,-87.47085,219
+188,Perry,Marion County,IN,Township,39.67674,-86.15616,317
+189,South Bend,St. Joseph County,IN,City,41.68338,-86.25001,574
+190,Warren,Marion County,IN,Township,39.77514,-86.01718,317
+191,Washington,Marion County,IN,Township,39.87632,-86.14291,317
+192,Wayne,Allen County,IN,Township,41.05238,-85.16209,260
+193,Wayne,Marion County,IN,Township,39.77186,-86.26094,317
+194,Kansas City,Wyandotte County,KS,City,39.11417,-94.62746,913
+195,Olathe,Johnson County,KS,City,38.8814,-94.81913,913
+196,Overland Park,Johnson County,KS,City,38.98223,-94.67079,913
+197,Topeka,Shawnee County,KS,City,39.04833,-95.67804,785
+198,Wichita,Sedgwick County,KS,City,37.69224,-97.33754,316
+199,Lexington-Fayette,Fayette County,KY,Urban County ,38.0498,-84.45855,859
+200,Louisville,Jefferson County,KY,City,38.25424,-85.75941,502
+201,Baton Rouge,East Baton Rouge Parish,LA,City,30.45075,-91.15455,225
+202,Lafayette,Lafayette Parish,LA,City,30.22409,-92.01984,337
+203,Metairie,Jefferson Parish,LA,CDP,29.98409,-90.15285,504
+204,New Orleans,Orleans Parish,LA,City,29.95465,-90.07507,504
+205,Shreveport,Caddo Parish/Bossier Parish,LA,City,32.46688,-93.79219,318
+206,Boston,Suffolk County,MA,City,42.35843,-71.05977,857
+207,Cambridge,Middlesex County,MA,City,42.3751,-71.10561,857
+208,Lowell,Middlesex County,MA,City,42.63342,-71.31617,351
+209,Springfield,Hampden County,MA,City,42.10148,-72.58981,413
+210,Worcester,Worcester County,MA,City,42.26259,-71.80229,774
+211,Baltimore,Baltimore city,MD,City,39.29038,-76.61219,410
+212,Columbia,Howard County,MD,CDP,39.24038,-76.83942,410
+213,Ann Arbor,Washtenaw County,MI,City,42.27087,-83.72633,734
+214,Detroit,Wayne County,MI,City,42.33143,-83.04575,313
+215,Grand Rapids,Kent County,MI,City,42.96336,-85.66809,616
+216,Lansing,Clinton County/Ingham County/Eaton County,MI,City,42.71434,-84.55928,517
+217,Sterling Heights,Macomb County,MI,City,42.58031,-83.0302,586
+218,Warren,Macomb County,MI,City,42.49982,-83.00549,586
+219,Minneapolis,Hennepin County,MN,City,44.97997,-93.26384,612
+220,Rochester,Olmsted County,MN,City,44.02163,-92.4699,507
+221,St. Paul,Ramsey County,MN,City,44.94441,-93.09327,651
+222,Columbia,Boone County,MO,City,38.95171,-92.33407,573
+223,Independence,Jackson County/Clay County,MO,City,39.08547,-94.3521,816
+224,Kansas City,Cass County/Platte County/Jackson County/Clay County,MO,City,39.12513,-94.55103,816
+225,Springfield,Christian County/Greene County,MO,City,37.19415,-93.2913,417
+226,St. Louis,St. Louis city,MO,City,38.62727,-90.19789,314
+227,Jackson,Rankin County/Hinds County/Madison County,MS,City,32.31583,-90.21282,769
+228,Billings,Yellowstone County,MT,City,45.78329,-108.50069,406
+229,Cary,Chatham County/Wake County,NC,Town,35.78088,-78.81327,919
+230,Charlotte,Mecklenburg County,NC,City,35.22709,-80.84313,704
+231,Durham,Durham County/Orange County/Wake County,NC,City,35.98115,-78.90293,919
+232,Fayetteville,Cumberland County,NC,City,35.05266,-78.87836,910
+233,Greensboro,Guilford County,NC,City,36.07264,-79.79198,336
+234,High Point,Davidson County/Randolph County/Forsyth County/Guilford County,NC,City,35.98998,-79.99047,336
+235,Raleigh,Durham County/Wake County,NC,City,35.8306,-78.64177,919
+236,Wilmington,New Hanover County,NC,City,34.22573,-77.94471,910
+237,Winston-Salem,Forsyth County,NC,City,36.09986,-80.24422,336
+238,Fargo,Cass County,ND,City,46.87719,-96.7898,701
+239,Lincoln,Lancaster County,NE,City,40.8,-96.66696,402
+240,Omaha,Douglas County,NE,City,41.25861,-95.93779,402
+241,Manchester,Hillsborough County,NH,City,42.99564,-71.45479,603
+242,Edison,Middlesex County,NJ,Township,40.50399,-74.34941,848
+243,Elizabeth,Union County,NJ,City,40.66399,-74.2107,908
+244,Jersey City,Hudson County,NJ,City,40.72816,-74.07764,551
+245,Newark,Essex County,NJ,City,40.73566,-74.17237,973
+246,Paterson,Passaic County,NJ,City,40.91677,-74.17181,973
+247,Woodbridge (Township),Middlesex County,NJ,Township,40.56073,-74.2927,848
+248,Albuquerque,Bernalillo County,NM,City,35.08449,-106.65114,505
+249,Las Cruces,DoÌÄå±a Ana County,NM,City,32.31232,-106.77834,575
+250,Enterprise,Clark County,NV,CDP,36.02525,-115.24194,702
+251,Henderson,Clark County,NV,City,36.0397,-114.98194,702
+252,Las Vegas,Clark County,NV,City,36.17497,-115.13722,702
+253,North Las Vegas,Clark County,NV,City,36.19886,-115.1175,702
+254,Paradise,Clark County,NV,CDP,36.09719,-115.14666,702
+255,Reno,Washoe County,NV,City,39.52963,-119.8138,775
+256,Spring Valley,Clark County,NV,CDP,36.10803,-115.245,702
+257,Sunrise Manor,Clark County,NV,CDP,36.21108,-115.07306,702
+258,Amherst,Erie County,NY,Town,43.01164,-78.75715,716
+259,Babylon (Town),Suffolk County,NY,Town,40.64092,-73.31669,631
+260,Brookhaven,Suffolk County,NY,Town,40.85745,-72.95984,631
+261,Brooklyn,Kings County,NY,Borough,40.62472,-73.95222,347
+262,Buffalo,Erie County,NY,City,42.88645,-78.87837,716
+263,Hempstead (Town),Nassau County,NY,Town,40.63396,-73.6091,516
+264,Huntington,Suffolk County,NY,Town,40.88409,-73.37676,631
+265,Islip,Suffolk County,NY,Town,40.71258,-73.19552,631
+266,Manhattan,New York County,NY,Borough,40.72833,-73.99417,212
+267,New York City,Richmond County/Queens County/Kings County/New York County/Bronx County,NY,City,40.66347,-73.9387,718
+268,North Hempstead,Nassau County,NY,Town,40.80336,-73.6784,516
+269,Oyster Bay,Nassau County,NY,Town,40.80049,-73.51056,516
+270,Queens,Queens County,NY,Borough,40.75,-73.86667,718
+271,Ramapo,Rockland County,NY,Town,41.14077,-74.10498,845
+272,Rochester,Monroe County,NY,City,43.15478,-77.61556,716
+273,Smithtown,Suffolk County,NY,Town,40.91922,-73.17912,631
+274,Staten Island,Richmond County,NY,Borough,40.57628,-74.14484,718
+275,Syracuse,Onondaga County,NY,City,43.04812,-76.14742,315
+276,The Bronx,Bronx County,NY,Borough,40.83722,-73.88611,347
+277,Yonkers,Westchester County,NY,City,40.93121,-73.89875,914
+278,Akron,Summit County,OH,City,41.08144,-81.51901,330
+279,Cincinnati,Hamilton County,OH,City,39.162,-84.45689,513
+280,Cleveland,Cuyahoga County,OH,City,41.4995,-81.69541,216
+281,Columbus,Delaware County/Franklin County/Fairfield County,OH,City,39.98524,-82.98477,614
+282,Dayton,Montgomery County,OH,City,39.75895,-84.19161,937
+283,Toledo,Lucas County,OH,City,41.66394,-83.55521,419
+284,Broken Arrow,Wagoner County/Tulsa County,OK,City,36.03653,-95.781,918
+285,Norman,Cleveland County,OK,City,35.22257,-97.43948,405
+286,Oklahoma City,Canadian County/Pottawatomie County/Oklahoma County/Cleveland County,OK,City,35.46708,-97.51366,405
+287,Tulsa,Rogers County/Wagoner County/Osage County/Tulsa County,OK,City,36.12795,-95.90232,918
+288,Eugene,Lane County,OR,City,44.05207,-123.08675,541
+289,Gresham,Multnomah County,OR,City,45.49818,-122.43148,503
+290,Hillsboro,Washington County,OR,City,45.52289,-122.98983,503
+291,Portland,Clackamas County/Multnomah County/Washington County,OR,City,45.53695,-122.64997,503
+292,Salem,Marion County/Polk County,OR,City,44.92371,-123.02319,503
+293,Allentown,Lehigh County,PA,City,40.60843,-75.49018,610
+294,Philadelphia,Philadelphia County,PA,City,39.95234,-75.16379,445
+295,Pittsburgh,Allegheny County,PA,City,40.44062,-79.99589,412
+296,Providence,Providence County,RI,City,41.82399,-71.41283,401
+297,Charleston,Berkeley County/Charleston County,SC,City,32.81793,-79.95896,843
+298,Columbia,Lexington County/Richland County,SC,City,34.0291,-80.89804,803
+299,North Charleston,Dorchester County/Berkeley County/Charleston County,SC,City,32.91782,-80.06503,843
+300,Sioux Falls,Minnehaha County/Lincoln County,SD,City,43.53834,-96.732,605
+301,Chattanooga,Hamilton County,TN,City,35.04563,-85.30968,423
+302,Clarksville,Montgomery County,TN,City,36.52977,-87.35945,931
+303,Knoxville,Knox County,TN,City,35.96064,-83.92074,865
+304,Memphis,Shelby County,TN,City,35.14953,-90.04898,901
+305,Murfreesboro,Rutherford County,TN,City,35.84562,-86.39027,615
+306,Nashville,Davidson County,TN,Metropolitan Government,36.16913,-86.78479,615
+307,Abilene,Jones County/Taylor County,TX,City,32.45451,-99.73815,325
+308,Amarillo,Randall County/Potter County,TX,City,35.19988,-101.8302,806
+309,Arlington,Tarrant County,TX,City,32.73569,-97.10807,682
+310,Austin,Hays County/Williamson County/Travis County,TX,City,30.30394,-97.75436,512
+311,Beaumont,Jefferson County,TX,City,30.08605,-94.10185,409
+312,Brownsville,Cameron County,TX,City,25.90175,-97.49748,956
+313,Carrollton,Collin County/Denton County/Dallas County,TX,City,32.98836,-96.89977,972
+314,College Station,Brazos County,TX,City,30.62798,-96.33441,979
+315,Corpus Christi,Aransas County/Kleberg County/Nueces County/San Patricio County,TX,City,27.75425,-97.17339,361
+316,Dallas,Rockwall County/Kaufman County/Collin County/Denton County/Dallas County,TX,City,32.79333,-96.76651,972
+317,Denton,Denton County,TX,City,33.21484,-97.13307,940
+318,El Paso,El Paso County,TX,City,31.75872,-106.48693,915
+319,Fort Worth,Parker County/Johnson County/Tarrant County/Wise County/Denton County,TX,City,32.78152,-97.34675,682
+320,Frisco,Collin County/Denton County,TX,City,33.15543,-96.8226,972
+321,Garland,Rockwall County/Collin County/Dallas County,TX,City,32.90983,-96.63033,972
+322,Grand Prairie,Tarrant County/Ellis County/Dallas County,TX,City,32.68695,-97.0211,972
+323,Houston,Fort Bend County/Harris County/Montgomery County,TX,City,29.78664,-95.3909,832
+324,Irving,Dallas County,TX,City,32.81402,-96.94889,972
+325,Killeen,Bell County,TX,City,31.11712,-97.7278,254
+326,Laredo,Webb County,TX,City,27.50641,-99.50754,956
+327,Lewisville,Denton County/Dallas County,TX,City,33.04655,-96.98183,972
+328,Lubbock,Lubbock County,TX,City,33.57786,-101.85517,806
+329,McAllen,Hidalgo County,TX,City,26.20341,-98.23001,956
+330,McKinney,Collin County,TX,City,33.19762,-96.61527,972
+331,Mesquite,Kaufman County/Dallas County,TX,City,32.76288,-96.58877,972
+332,Midland,Martin County/Midland County,TX,City,32.02464,-102.11347,432
+333,Odessa,Midland County/Ector County,TX,City,31.88378,-102.34106,432
+334,Pasadena,Harris County,TX,City,29.69106,-95.2091,832
+335,Pearland,Fort Bend County/Harris County/Brazoria County,TX,City,29.55576,-95.32307,832
+336,Plano,Collin County/Denton County,TX,City,33.05077,-96.74794,972
+337,Richardson,Collin County/Dallas County,TX,City,32.97229,-96.70807,972
+338,Round Rock,Williamson County/Travis County,TX,City,30.52524,-97.66595,512
+339,San Angelo,Tom Green County,TX,City,31.46377,-100.43704,325
+340,San Antonio,Bexar County/Comal County/Medina County,TX,City,29.4724,-98.52514,210
+341,The Woodlands,Harris County/Montgomery County,TX,CDP,30.17256,-95.50981,832
+342,Tyler,Smith County,TX,City,32.35126,-95.30106,903
+343,Waco,McLennan County,TX,City,31.54933,-97.14667,254
+344,Wichita Falls,Wichita County,TX,City,33.91371,-98.49339,940
+345,Provo,Utah County,UT,City,40.23384,-111.65853,385
+346,Salt Lake City,Salt Lake County,UT,City,40.76078,-111.89105,385
+347,West Jordan,Salt Lake County,UT,City,40.60967,-111.9391,385
+348,West Valley City,Salt Lake County,UT,City,40.69161,-112.00105,385
+349,Alexandria,Alexandria city,VA,City,38.80484,-77.04692,571
+350,Arlington,Arlington County,VA,CDP,38.89039,-77.08414,571
+351,Chesapeake,Chesapeake city,VA,City,36.81904,-76.27494,757
+352,Hampton,Hampton city,VA,City,37.02987,-76.34522,757
+353,Newport News,Newport News city,VA,City,36.97876,-76.428,757
+354,Norfolk,Norfolk city,VA,City,36.84681,-76.28522,757
+355,Richmond,Richmond city,VA,City,37.55376,-77.46026,804
+356,Virginia Beach,Virginia Beach city,VA,City,36.85293,-75.97799,757
+357,Bellevue,King County,WA,City,47.61038,-122.20068,425
+358,Everett,Snohomish County,WA,City,47.97898,-122.20208,425
+359,Kent,King County,WA,City,47.38093,-122.23484,253
+360,Renton,King County,WA,City,47.48288,-122.21707,425
+361,Seattle,King County,WA,City,47.60621,-122.33207,206
+362,Spokane,Spokane County,WA,City,47.65878,-117.42605,509
+363,Tacoma,Pierce County,WA,City,47.25288,-122.44429,253
+364,Vancouver,Clark County,WA,City,45.63873,-122.66149,360
+365,Green Bay,Brown County,WI,City,44.51916,-88.01983,920
+366,Madison,Dane County,WI,City,43.07305,-89.40123,608
+367,Milwaukee,Milwaukee County/Washington County/Waukesha County,WI,City,43.06335,-87.9667,414
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
