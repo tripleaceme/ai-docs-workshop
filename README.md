@@ -6,7 +6,7 @@ A mid-sized retail company, **ShopSmart**, manages thousands of daily transactio
 Their data team built a dbt project to transform raw sales, customer, and inventory data into analytics-ready models for dashboards and performance reports.
 
 However, there’s a major challenge:
-while their dbt project runs smoothly, **their documentation is always outdated**.
+While their dbt project runs smoothly, **their documentation is always outdated**.
 
 ### **The Core Problems**
 
@@ -14,7 +14,7 @@ while their dbt project runs smoothly, **their documentation is always outdated*
    Each time a model changes, analysts have to manually update descriptions for new columns, metrics, and transformations. Over time, this became inconsistent and error-prone.
 
 2. **Lack of Context for Stakeholders**
-   Business users often asked questions like:
+   Business users often ask questions like:
 
    * “What does the *average_order_value* metric actually mean?”
    * “Where does this *customer_segment* field come from?”
