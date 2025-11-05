@@ -2,7 +2,7 @@
 
 ### **Problem Context**
 
-A mid-sized retail company, **ShopSmart**, manages thousands of daily transactions across multiple sales channels — online, in-store, and third-party marketplaces.
+A mid-sized retail company, **ShopSmart**, manages millions of daily transactions across multiple sales channels such as online, in-store, and third-party marketplaces.
 Their data team built a dbt project to transform raw sales, customer, and inventory data into analytics-ready models for dashboards and performance reports.
 
 However, there’s a major challenge:
@@ -24,9 +24,6 @@ While their dbt project runs smoothly, **their documentation is always outdated*
 
 3. **Slow Onboarding for New Team Members**
    New data engineers or analysts struggled to understand model dependencies and transformation logic because the **dbt docs were incomplete** and **no conceptual documentation existed** to explain *why* certain data flows were built the way they were.
-
-4. **No Centralized Conceptual Documentation**
-   The company didn’t have a single, clear documentation site that explained the project’s business goals, data sources, and architecture — meaning even the executives lacked visibility into how data supported decision-making.
 
 ---
 
