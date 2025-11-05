@@ -1,20 +1,46 @@
-# 🧰 Workshop Setup Guide
+# 🧰 **Workshop Setup Guide: Leveraging AI for Data-Driven Documentation: Capturing & Scaling Domain Knowledge**
 
-### **Leveraging AI for Data-Driven Documentation: Capturing & Scaling Domain Knowledge**
-
-*Facilitated by [Ayoade Adegbite](https://www.linkedin.com/in/tripleaceme/)*
+*Facilitated by [Ayoade Adegbite](https://www.linkedin.com/in/tripleaceme/) for Kwara Build Workshop 2025*
 
 ---
+
+Welcome! 👋
+
+In this workshop, we’ll be building an AI-powered documentation automation system for dbt models, the same kind that ensures every data model in your project is properly documented before deployment.
+
+To get hands-on, we’ll go through **two setup parts**:
+
+1. **Part 1:** Set up dbt, PostgreSQL connection, and prepare your seed data.
+2. **Part 2:** Set up Gemini AI for documentation generation.
+
+By the end of both parts, you’ll have a working environment ready for the workshop.
+
+---
+
+## ⚙️ **PART 1 — Setting Up dbt and Database**
+
+This section will walk you through:
+
+* Creating and activating a Python virtual environment
+* Installing dbt and dependencies
+* Setting up PostgreSQL and connection credentials
+* Cloning the workshop repo
+* Running dbt commands to seed and verify data
+
+Let’s go step by step 👇
+
+---
+
 
 ## 🪜 Step 1: Prerequisites
 
 Before we begin, make sure you have the following installed:
 
-✅ **Python 3.9+**
-✅ **pip** (comes with Python)
-✅ **git**
-✅ **PostgreSQL** (you’ll need it running locally or use an online instance)
-✅ **VS Code or any text editor**
+- **Python 3.9+**
+- **pip** (comes with Python)
+- **git**
+- **PostgreSQL** (you’ll need it running locally or use an online instance)
+- **VS Code or any text editor**
 
 ---
 
@@ -183,26 +209,59 @@ Now your dbt project has a `seeds/` directory containing your raw data files.
 
 ## 🌾 Step 10: Load Data Using dbt Seeds
 
-With your database connection ready and seed files in place, let’s load the data:
+Now that your connection is configured and your CSV files are in the `seeds/` folder, it’s time to load those files into your database using dbt’s **seed** feature.
+
+The `dbt seed` command looks for all `.csv` files inside your project’s `seeds/` directory and loads them into your target database (in our case, Postgres).
+
+Each CSV file name automatically becomes the **table name** in your database.
+For example:
+
+```
+seeds/
+ └── customers.csv
+```
+
+will create a table called **`raw_data.customers`** in your database schema defined in your `profiles.yml` (that’s `raw_data` in this workshop).
+
+### 🧠 Behind the scenes:
+
+* dbt reads the CSV files in the `seeds` directory.
+* It checks your connection details in `profiles.yml`.
+* It creates new tables (or replaces existing ones) in the target schema.
+* The table name matches the CSV file name (without `.csv`).
+
+### 🧩 Command:
 
 ```bash
 dbt seed
 ```
 
-✅ You should see an output like:
+If successful, you’ll see output like this:
 
 ```
 Running 1 seed for ai_docs
 Completed successfully
 ```
 
-This means dbt has loaded your CSV data into the database under the `raw_data` schema.
+✅ This means dbt successfully created your tables in the `raw_data` schema using the CSV data you provided.
 
 ---
 
-## 🧰 Step 11: 
+## 🧾 Step 11: Verify That Data Was Loaded Correctly
 
+Now let’s confirm that the tables actually exist and contain data in your Postgres database.
 
+1. Open **pgAdmin** or your SQL client.
+2. Navigate to your database → `workshop_db` → Schemas → `raw_data` → Tables.
+3. You should now see tables with names matching your CSV files (e.g., `customers`, `orders`, etc.).
+4. Run a quick query to confirm data is there:
+
+```sql
+SELECT * FROM raw_data.customers LIMIT 5;
+```
+
+If you see rows returned — 🎉 congratulations, your seed step worked perfectly!
+Your `raw_data` schema is now fully populated and ready for the dbt modeling and documentation automation phase.
 
 ---
 
@@ -219,11 +278,98 @@ During the workshop, we’ll build dbt models, explore documentation generation,
 
 ---
 
+
+# 🤖 **PART 2 — Setting Up Gemini AI**
+
+Now that your dbt project is ready and your data is loaded, it’s time to connect our AI engine (**Gemini AI**) which will help us automatically generate missing documentation.
+
+We’ll go through 3 key steps:
+
+1. Get your Gemini AI API key.
+2. Store it securely in an environment file (`.env`).
+3. Install dependencies so everything work as needed.
+4. Test the connection to make sure everything works.
+
+---
+
+## 🔑 **Step 1: Get Your Gemini AI API Key**
+
+1. Go to the Gemini AI API page:
+   👉 [AI Google Studio](aistudio.google.com)
+2. Log in with your Google account.
+3. Click **“Create API key”**.
+4. Copy your API key and keep it somewhere safe. We’ll need it soon.
+
+<img width="1348" height="579" alt="Screenshot 2025-11-05 at 21 43 04" src="https://github.com/user-attachments/assets/5392e1dc-98fb-4e7b-a618-43dc8d162fa5" />
+
+
+---
+
+## 🧩 **Step 2: Create and Configure Your `.env` File**
+
+You’ll need a place to store your API key securely so our Python scripts can access it.
+
+1. In your **project root folder** (the same folder as your `dbt_project.yml` file), create a new file called:
+
+   ```
+   .env
+   ```
+
+2. Open the `.env` file and paste the following line inside it:
+
+   ```
+   GEMINI_API_KEY=your_api_key_here
+   ```
+
+   > 🔒 Replace `your_api_key_here` with the actual key you copied earlier.
+
+3. Save and close the file.
+
+---
+
+## 🧠 **Step 3: Install Dependencies for AI Connection**
+
+Before testing your AI connection, install the libraries needed to load environment variables and call Gemini AI:
+
+```bash
+pip install python-dotenv google-generativeai
+```
+
+---
+
+## 🧪 **Step 4: Test Your Gemini AI Setup**
+
+We’ll now confirm that your API key is working correctly.
+In your VS Code, create a file called test_api.py and paste the script below. Click on the play button to run the script:
+
+```python
+import google.generativeai as genai
+from dotenv import load_dotenv
+import os
+
+# Load environment variables
+load_dotenv()
+
+# Set up Gemini AI with your key
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+
+# Test the connection by asking a simple question
+model = genai.GenerativeModel("gemini-1.5-flash")
+response = model.generate_content("Say hello, Gemini!")
+print(response.text)
+```
+
+✅ If everything is set up correctly, you should see a friendly response like:
+
+```
+Hello, Gemini!
+```
+
+🎉 That means your Gemini API key is valid and connected — and your environment is fully ready for the automation part of the workshop!
+
+---
+
 ### 💬 Need Help?
 
 If you encounter any issues during setup, reach out to me on LinkedIn:
 👉 [Ayoade Adegbite](https://www.linkedin.com/in/tripleaceme/)
-
----
-
-Would you like me to now format this as a **clean `SETUP.md` file** (with Markdown formatting, emojis, and code blocks) so you can add it directly to your GitHub repo for participants to view online?
