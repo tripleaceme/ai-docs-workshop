@@ -1,4 +1,5 @@
-# 🧰 **Workshop Setup Guide: Leveraging AI for Data-Driven Documentation: Capturing & Scaling Domain Knowledge**
+# 🧰 **Workshop Setup Guide:**
+### **Leveraging AI for Data-Driven Documentation: Capturing & Scaling Domain Knowledge**
 
 *Facilitated by [Ayoade Adegbite](https://www.linkedin.com/in/tripleaceme/) for Kwara Build Workshop 2025*
 
@@ -199,7 +200,6 @@ Example:
 
 ```bash
 # Assuming you're inside the ai_docs project
-mkdir seeds
 mv ../ai-docs-workshop/data/*.csv seeds/
 ```
 
@@ -354,7 +354,7 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Test the connection by asking a simple question
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.5-flash")
 response = model.generate_content("Say hello, Gemini!")
 print(response.text)
 ```
@@ -362,10 +362,19 @@ print(response.text)
 ✅ If everything is set up correctly, you should see a friendly response like:
 
 ```
-Hello, Gemini!
+Hello! It's great to hear from you. How can I help you today?
 ```
 
 🎉 That means your Gemini API key is valid and connected — and your environment is fully ready for the automation part of the workshop!
+
+But if you encounter any error like the one below:
+
+```
+google.api_core.exceptions.NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+
+```
+Visit [Gemini API Docs](https://ai.google.dev/gemini-api/docs/text-generation) and check for the latest model that supports text generation.
+
 
 ---
 
