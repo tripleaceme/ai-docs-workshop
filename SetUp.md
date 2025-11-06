@@ -1,4 +1,4 @@
-# 🧰 **Workshop Setup Guide:**
+# 🧰 **Workshop Setup Guide**
 ### **Leveraging AI for Data-Driven Documentation: Capturing & Scaling Domain Knowledge**
 
 *Facilitated by [Ayoade Adegbite](https://www.linkedin.com/in/tripleaceme/) for Kwara Build Workshop 2025*
