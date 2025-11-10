@@ -42,10 +42,30 @@ Before we begin, make sure you have the following installed:
 - **git**
 - **PostgreSQL** (you’ll need it running locally or use an online instance)
 - **VS Code or any text editor**
+---
+
+## 🗄️ Step 2: Set Up PostgreSQL
+
+Next, let’s prepare your database before initializing dbt.
+
+1. Open **pgAdmin** or your preferred SQL client.
+2. Create a **new database** named `workshop_db`.
+3. Inside `workshop_db`, create a **schema** called `raw_data`.
+
+Your credentials will look like this:
+
+* **Host:** `localhost`
+* **User:** `postgres`
+* **Password:** your chosen password
+* **Port:** `5432`
+* **Database:** `workshop_db`
+* **Schema:** `raw_data`
+
+Keep these details handy — you’ll use them when setting up your dbt profile.
 
 ---
 
-## 🧱 Step 2: Create and Activate a Virtual Environment
+## 🧱 Step 3: Create and Activate a Virtual Environment
 
 We’ll use a virtual environment to isolate our dependencies.
 
@@ -66,7 +86,7 @@ You should now see `(venv)` at the start of your terminal line — that means yo
 
 ---
 
-## ⚙️ Step 3: Install dbt
+## ⚙️ Step 4: Install dbt
 
 Once your virtual environment is active, install dbt core and the Postgres adapter.
 
@@ -79,27 +99,6 @@ Confirm installation:
 ```bash
 dbt --version
 ```
-
----
-
-## 🗄️ Step 4: Set Up PostgreSQL
-
-Next, let’s prepare your database before initializing dbt.
-
-1. Open **pgAdmin** or your preferred SQL client.
-2. Create a **new database** named `workshop_db`.
-3. Inside `workshop_db`, create a **schema** called `raw_data`.
-
-Your credentials will look like this:
-
-* **Host:** `localhost`
-* **User:** `postgres`
-* **Password:** your chosen password
-* **Port:** `5432`
-* **Database:** `workshop_db`
-* **Schema:** `raw_data`
-
-Keep these details handy — you’ll use them when setting up your dbt profile.
 
 ---
 
