@@ -50,13 +50,15 @@ Next, let’s prepare your database before initializing dbt.
 
 1. Open **pgAdmin** or your preferred SQL client.
 2. Create a **new database** named `workshop_db`.
-3. Inside `workshop_db`, create a **schema** called `raw_data`.
+3. Create a user called `dbt_user` with a password of your choice, e.g `dbt_user`.
+4. Inside `workshop_db`, create a **schema** called `raw_data` and `prod`. Ensure to select the `dbt_user` as the `owner` of the database and table
+
 
 Your credentials will look like this:
 
 * **Host:** `localhost`
-* **User:** `postgres`
-* **Password:** your chosen password
+* **User:** `dbt_user`
+* **Password:** your chosen password or `dbt_user`
 * **Port:** `5432`
 * **Database:** `workshop_db`
 * **Schema:** `raw_data`
