@@ -109,7 +109,7 @@ dbt --version
 Now let’s get the starter repository that contains the data we’ll be using.
 
 ```bash
-git clone https://github.com/<your-org-or-username>/ai-docs-workshop.git
+git clone https://github.com/tripleaceme/ai-docs-workshop.git
 cd ai-docs-workshop
 ```
 
@@ -139,6 +139,7 @@ When prompted:
   * **Port:** `5432`
   * **Database:** `workshop_db`
   * **Schema:** `raw_data`
+    **Threads:** `5`
 
 After initialization, dbt will create a folder called `ai_docs` with some starter files.
 
@@ -178,6 +179,7 @@ Save the file.
 Run this command to confirm dbt can connect to your database:
 
 ```bash
+cd ai_docs
 dbt debug
 ```
 
