@@ -27,14 +27,10 @@ While their dbt project runs smoothly, **their documentation is always outdated*
 
 ---
 
-### **Why It Matters**
+### **Proposed Solution**
 
-Without accurate documentation:
+So, the company wants to **automate its documentation process**, integrating **dbt**, **AI (Gemini API)** to ensure that both the *technical* and *business* sides of their data project stay aligned.
 
-* Analysts waste hours re-explaining logic.
-* Data engineers risk breaking downstream dependencies.
-* Business teams lose trust in the reports and dashboards.
+<img width="1280" height="389" alt="Documentation Pipeline" src="https://github.com/user-attachments/assets/998ccdfe-f663-487c-b5ee-9d59ac230c97" />
 
----
 
-So, the company wants to **automate its documentation process**, integrating **dbt**, **AI (Gemini API)**, and **conceptual documentation hosted on GitHub Pages** to ensure that both the *technical* and *business* sides of their data project stay aligned.
