@@ -198,14 +198,6 @@ If not, double-check your `profiles.yml` credentials or ensure Postgres is runni
 
 In your cloned repository (`ai-docs-workshop`), there’s a `data/` folder.
 Move those CSV files into your dbt project’s `seeds/` folder.
-
-Example:
-
-```bash
-# Assuming you're inside the ai_docs project
-mv ../ai-docs-workshop/data/*.csv seeds/
-```
-
 Now your dbt project has a `seeds/` directory containing your raw data files.
 
 ---
@@ -260,7 +252,7 @@ Now let’s confirm that the tables actually exist and contain data in your Post
 4. Run a quick query to confirm data is there:
 
 ```sql
-SELECT * FROM raw_data.customers LIMIT 5;
+SELECT * FROM raw_data.table_name LIMIT 5;
 ```
 
 If you see rows returned — 🎉 congratulations, your seed step worked perfectly!
@@ -277,10 +269,378 @@ You’ve now completed all environment setup steps:
 3. Initialized a dbt project
 4. Loaded your first dataset
 
-During the workshop, we’ll build dbt models, explore documentation generation, and automate it with AI.
+---
+Let's set up our models, and during the workshop, we’ll build dbt models, explore documentation generation, and automate it with AI.
+
+# Sources Configuration
+
+Place this in:
+`models/staging/sources.yml`
+
+```yaml
+version: 2
+
+sources:
+  - name: workshop_db
+    schema: raw_data
+    database: workshop_db
+    tables:
+      - name: products
+      - name: order_item_refunds
+      - name: orders
+
+```
+#### **Order item refunds model**
+---
+
+Place this in:
+`models/staging/stg_order_item_refunds.sql`
+
+A simple staging model that renames columns and casts types where appropriate:
+
+```sql
+with source as (
+
+    select *
+    from {{ source('workshop_db', 'order_item_refunds') }}
+
+),
+
+renamed as (
+
+    select
+        order_item_refund_id,
+        created_at::timestamp as created_at,
+        order_item_id,
+        order_id,
+        refund_amount_usd::numeric(10,2) as refund_amount_usd
+    from source
+
+)
+
+select * from renamed
+```
 
 ---
 
+### **model description for order item refunds**
+
+Place this in:
+`models/staging/schema/stg_order_item_refunds.yml`
+
+```yaml
+version: 2
+
+models:
+  - name: stg_order_item_refunds
+    description: "Clean and standardized staging model for order item refunds."
+    columns:
+      - name: order_item_refund_id
+        description: "Unique ID for each refund event on an order item."
+        tests:
+          - not_null
+          - unique
+
+      - name: created_at
+        description: "Timestamp when the refund record was created."
+
+      - name: order_item_id
+        description: "ID of the specific order item that the refund applies to."
+
+      - name: order_id
+        description: "Order to which the refunded item belongs."
+
+      - name: refund_amount_usd
+        description: "Total refund amount in USD for the item."
+```
+
+---
+#### **products model**
+
+Place this in:
+`models/staging/stg_products.sql`
+
+```sql
+with source as (
+
+    select *
+    from {{ source('raw_data', 'products') }}
+
+),
+
+renamed as (
+
+    select
+        product_id,
+        created_at,
+        product_name
+    from source
+
+)
+
+select * from renamed;
+```
+
+---
+
+### **model description for products**
+
+Place this in:
+`models/staging/schema/stg_products.yml`
+
+```yaml
+version: 2
+
+models:
+  - name: stg_products
+    description: "Staging model containing product metadata."
+    columns:
+      - name: product_id
+        description: "Unique identifier for each product."
+
+      - name: created_at
+        description: "Timestamp when the product record was added to the system."
+
+      - name: product_name
+        description: "Human-readable name of the product being sold."
+```
+
+---
+#### **Order model**
+
+Place this in:
+`models/staging/orders/stg_orders.sql`
+
+```sql
+with source as (
+
+    select *
+    from {{ source('raw_data', 'orders') }}
+
+),
+
+renamed as (
+
+    select
+        order_id,
+        created_at,
+        website_session_id,
+        user_id,
+        primary_product_id,
+        items_purchased::int as items_purchased,
+        price_usd::numeric(10,2) as price_usd,
+        cogs_usd::numeric(10,2) as cogs_usd
+    from source
+
+)
+
+select * from renamed;
+```
+
+---
+
+### **model description for order**
+
+Place this in:
+`models/staging/schema/stg_orders.yml`
+
+```yaml
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Staging model for customer orders including purchase details, pricing, and costs."
+    columns:
+      - name: order_id
+        description: "Unique identifier for each order."
+
+      - name: created_at
+        description: "Timestamp when the order was created."
+
+      - name: website_session_id
+        description: "Session identifier representing the website visit that led to the order."
+
+      - name: user_id
+        description: "Unique customer identifier that placed the order."
+
+      - name: primary_product_id
+        description: "Identifier of the main product purchased in this order."
+
+      - name: items_purchased
+        description: "Number of items purchased in the order."
+
+      - name: price_usd
+        description: "Total price paid for the order in USD."
+
+      - name: cogs_usd
+        description: "Cost of goods sold associated with fulfilling this order."
+```
+
+---
+### **model description for Intermediate order**
+
+Place this in:
+`models/intermediate/int_orders_enriched.sql`
+
+
+```sql
+with orders as (
+    select * from {{ ref('stg_orders') }}
+),
+
+products as (
+    select * from {{ ref('stg_products') }}
+),
+
+refunds as (
+    select
+        order_id,
+        sum(refund_amount_usd) as total_refund_amount_usd
+    from {{ ref('stg_order_item_refunds') }}
+    group by order_id
+),
+
+joined as (
+
+    select
+        o.order_id,
+        o.created_at,
+        o.website_session_id,
+        o.user_id,
+
+        o.primary_product_id,
+        p.product_name,
+
+        o.items_purchased,
+        o.price_usd,
+        o.cogs_usd,
+
+        coalesce(r.total_refund_amount_usd, 0) as refund_amount_usd,
+
+        -- derived fields
+        o.price_usd - o.cogs_usd as gross_margin_usd,
+        (o.price_usd - o.cogs_usd) - coalesce(r.total_refund_amount_usd, 0) as net_margin_usd
+
+    from orders o
+    left join products p 
+        on o.primary_product_id = p.product_id
+    left join refunds r
+        on o.order_id = r.order_id
+)
+
+select * from joined;
+```
+
+---
+
+### **model description for Fact order**
+
+Place this in:
+`models/marts/facts/fact_orders.sql`
+
+
+```sql
+select
+    order_id,
+    created_at,
+    website_session_id,
+    user_id,
+    primary_product_id,
+    product_name,
+
+    items_purchased,
+    price_usd,
+    cogs_usd,
+    refund_amount_usd,
+
+    gross_margin_usd,
+    net_margin_usd
+
+from {{ ref('int_orders_enriched') }};
+```
+
+---
+### **model description for Product Dimension**
+
+Place this in:
+`models/marts/dim/dim_products.sql`
+
+```sql
+select
+    product_id,
+    product_name,
+    created_at
+from {{ ref('stg_products') }};
+```
+
+---
+
+### **model description for all marts table**
+
+Place this in:
+`models/marts/schema.yml`
+
+
+```yaml
+version: 2
+
+models:
+  - name: dim_products
+    description: "Dimension table containing product attributes."
+    columns:
+      - name: product_id
+        description: "Unique product identifier."
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_orders
+    description: "Fact table at the order grain, including financials and refund information."
+    columns:
+      - name: order_id
+        description: "Unique identifier for each order."
+        tests:
+          - unique
+          - not_null
+
+      - name: primary_product_id
+        description: "Main product purchased in the order."
+        tests:
+          - relationships:
+              to: ref('dim_products')
+              field: product_id
+
+      - name: price_usd
+        description: "Total price of the order in USD."
+
+      - name: cogs_usd
+        description: "Cost of goods sold for the order."
+
+      - name: refund_amount_usd
+        description: "Total refund amount applied to the order."
+
+      - name: gross_margin_usd
+        description: "Gross margin before refunds."
+
+      - name: net_margin_usd
+        description: "Margin after refunds."
+```
+
+---
+
+### **New Model Flow Diagram (Text Version)**
+
+```
+stg_orders  -----> 
+                   \
+                    → int_orders_enriched → fact_orders
+                   /
+stg_products -----
+                
+stg_order_item_refunds (aggregated at order level)
+```
+
+---
 
 # 🤖 **PART 2 — Setting Up Gemini AI**
 
