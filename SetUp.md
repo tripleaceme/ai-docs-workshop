@@ -197,8 +197,9 @@ If not, double-check your `profiles.yml` credentials or ensure Postgres is runni
 ## 🌱 Step 9: Move Data Files to dbt’s Seed Folder
 
 In your cloned repository (`ai-docs-workshop`), there’s a `data/` folder.
-Move those CSV files into your dbt project’s `seeds/` folder.
-Now your dbt project has a `seeds/` directory containing your raw data files.
+
+- Move those CSV files into your dbt project’s `seeds/` folder.
+- Now your dbt project has a `seeds/` directory containing your raw data files.
 
 ---
 
@@ -213,10 +214,10 @@ For example:
 
 ```
 seeds/
- └── customers.csv
+ └── orders.csv
 ```
 
-will create a table called **`raw_data.customers`** in your database schema defined in your `profiles.yml` (that’s `raw_data` in this workshop).
+will create a table called **`raw_data.orders`** in your database schema defined in your `profiles.yml` (that’s `raw_data` in this workshop).
 
 ### 🧠 Behind the scenes:
 
@@ -248,11 +249,11 @@ Now let’s confirm that the tables actually exist and contain data in your Post
 
 1. Open **pgAdmin** or your SQL client.
 2. Navigate to your database → `workshop_db` → Schemas → `raw_data` → Tables.
-3. You should now see tables with names matching your CSV files (e.g., `customers`, `orders`, etc.).
+3. You should now see tables with names matching your CSV files (e.g., `products`, `orders`, etc.).
 4. Run a quick query to confirm data is there:
 
 ```sql
-SELECT * FROM raw_data.table_name LIMIT 5;
+SELECT * FROM raw_data.orders LIMIT 5;
 ```
 
 If you see rows returned — 🎉 congratulations, your seed step worked perfectly!
@@ -275,7 +276,7 @@ Let's set up our models, and during the workshop, we’ll build dbt models, expl
 # Sources Configuration
 
 Place this in:
-`models/staging/sources.yml`
+`models/staging/schema/sources.yml`
 
 ```yaml
 version: 2
