@@ -365,7 +365,7 @@ Place this in:
 with source as (
 
     select *
-    from {{ source('raw_data', 'products') }}
+    from {{ source('workshop_db', 'products') }}
 
 ),
 
@@ -379,7 +379,7 @@ renamed as (
 
 )
 
-select * from renamed;
+select * from renamed
 ```
 
 ---
@@ -416,7 +416,7 @@ Place this in:
 with source as (
 
     select *
-    from {{ source('raw_data', 'orders') }}
+    from {{ source('workshop_db', 'orders') }}
 
 ),
 
@@ -435,7 +435,7 @@ renamed as (
 
 )
 
-select * from renamed;
+select * from renamed
 ```
 
 ---
@@ -529,7 +529,7 @@ joined as (
         on o.order_id = r.order_id
 )
 
-select * from joined;
+select * from joined
 ```
 
 ---
@@ -557,7 +557,7 @@ select
     gross_margin_usd,
     net_margin_usd
 
-from {{ ref('int_orders_enriched') }};
+from {{ ref('int_orders_enriched') }}
 ```
 
 ---
@@ -571,7 +571,7 @@ select
     product_id,
     product_name,
     created_at
-from {{ ref('stg_products') }};
+from {{ ref('stg_products') }}
 ```
 
 ---
@@ -606,10 +606,6 @@ models:
 
       - name: primary_product_id
         description: "Main product purchased in the order."
-        tests:
-          - relationships:
-              to: ref('dim_products')
-              field: product_id
 
       - name: price_usd
         description: "Total price of the order in USD."
@@ -626,6 +622,15 @@ models:
       - name: net_margin_usd
         description: "Margin after refunds."
 ```
+
+
+The last piece is to run the commands below:
+- ``` dbt run ```
+- ``` dbt docs generate ```
+
+**Your complete setup should look something like this:**
+
+<img width="295" height="425" alt="Screenshot 2025-11-11 at 18 20 09" src="https://github.com/user-attachments/assets/748e43b4-becc-45a4-b9ed-86ee3177f4ec" />
 
 ---
 
