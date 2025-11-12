@@ -110,7 +110,6 @@ Now let’s get the starter repository that contains the data we’ll be using.
 
 ```bash
 git clone https://github.com/tripleaceme/ai-docs-workshop.git
-cd ai-docs-workshop
 ```
 
 The repo contains a **data/** folder with the `.csv` files that we’ll load later using dbt seeds.
@@ -119,7 +118,7 @@ The repo contains a **data/** folder with the `.csv` files that we’ll load lat
 
 ## 🧩 Step 6: Initialize a dbt Project
 
-Now that dbt is installed and your repo is cloned, let’s create your dbt project.
+Now that dbt is installed and your repo is cloned, let’s create your dbt project. Don't change your directory into the clone repo. We only need the data. So if you can delete the remaining items after cloning the repo, please do.
 
 Run:
 
